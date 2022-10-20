@@ -9,9 +9,6 @@ request(url, (error, response, body) => {
     if (error) {
       console.error(error);
     }
-    console.log(`File uploaded`);
-    console.log(body)
+    console.log(`Downloaded and saved ${body.length} bytes to ${path}`);
   });
-  // console.log('error:', error); // Print the error if one occurred
-  // console.log('body:', body); // Print the HTML for the Google homepage.
 });
